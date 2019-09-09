@@ -18,6 +18,7 @@ namespace Veresiye.Data.Builders
 			builder.Property(a => a.ActivityType).IsRequired();
 			builder.Property(a => a.TransactionDate).IsRequired();
 			builder.HasRequired(a=>a.Company).WithMany(b=>b.Activities).HasForeignKey(a=>a.CompanyId);
+
 		}
 	}
 }
