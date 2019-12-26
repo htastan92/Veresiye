@@ -17,6 +17,7 @@ namespace Veresiye.UI
 		[STAThread]
 		static void Main()
 		{
+            // autofac konfigürasyonu
 			var builder = new ContainerBuilder();
 			builder.RegisterType<ApplicationDbContext>().As<ApplicationDbContext>().SingleInstance(); ;
 
